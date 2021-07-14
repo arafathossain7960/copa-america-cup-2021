@@ -1,0 +1,231 @@
+/*----- google fonts ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Common styles and utilities */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito Sans','Poppins', sans-serif;     
+    background-color: #fff;
+} 
+/* ------------------Header styles------------------------ */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color:blue
+}
+.banner:hover #banner-img{
+    transform: rotateY(360deg);
+}
+.banner-text{
+    width: 50%;
+    color:white;
+    margin: 100px 100px 200px 100px; 
+}
+.banner-text h1{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.banner-text .btn{
+    width: 168px;
+    height: 44px;
+    font-size: 16px;
+    background-color:#E02C6D;
+    color:white;
+    border: none;
+    transition: 0.8s;
+}
+.banner-text .btn:hover{
+opacity: 0.8;
+cursor: pointer;
+}
+.banner-text .btn .fas{
+    margin-left: 8px;
+}
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 550px;
+ height: 437px;  
+ margin:80px;
+ transition: 5s;
+}
+
+/* Start players cart styles--------------  */
+.players-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin: 70px 180px 50px 180px;
+}
+.cart{
+   width: 340px;
+    height: 474px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 30px lightgray;
+}
+.cart img{
+    width: 300px;
+    height: 256px;
+    padding: 16px;
+}
+.cart article{
+    padding: 15px;
+}
+.cart article h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+/* icon-logo-container section---------- */
+.icon-logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.logo img{
+    width: 230;
+    height: 70px;
+}
+.icon .fab{
+   font-size: 32px;
+    margin-left: 5px;
+    padding: 5px;
+    color:#E02C6D;
+    transition: 0.5s;
+}
+.icon .fab:hover{
+    opacity: 0.5;
+}
+/*--- This is footer styles----------- */
+footer{
+    font-size: 18px;
+    text-align: center;
+    background-color: #000;
+    color:#fff;
+    padding: 15px 0;
+}
+
+/*------- Extra section -1-------------- */
+.team-container{
+    display: flex;
+    justify-content: center;
+}
+.team-list{
+margin: 30px 100px 40px 100px;
+}
+.team-list h1{
+    text-align: center;
+    font-size: 35px;
+    padding: 25px 0px;
+}
+.teams{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-row-gap:25px ;
+    grid-column-gap: 45px;
+    justify-content: center;
+}
+.team h2{
+    padding: 8px 0px;
+    font-size: 22px;
+}
+.team img{
+    width: 120px;
+    height: 70px;
+}
+/*-------Extra Section --2-----------*/
+.schedule-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 20px 0px;
+}
+.schedule h1{
+    text-align: center;
+    font-size: 35px;
+    padding: 25px 0px;
+}
+.match{
+   display: flex;
+   justify-content: space-between;
+  padding: 15px 20px;
+  
+    box-shadow: 2px 2px 30px lightgray;
+}
+.match h3, p{
+    margin-right: 25px;
+}
+.match a{
+    text-decoration: none;
+}
+/* See more schedule ------ */
+.more-schedule{
+   text-align: center;
+
+}
+.more-schedule a{
+    text-decoration: none;
+}
+.more-schedule a button{
+    margin: 20px 0px;
+   padding: 10px 20px;
+    font-size: 16px;
+    background-color:#E02C6D;
+    color:white;
+    border: none;
+    transition: 0.8s;
+}
+.more-schedule a button:hover{
+opacity: 0.6;
+}
+
+/*-----------------------------------
+-----------@media Query--------------
+------------------------------------ */
+/* -------for mobile------ */
+@media only screen and (max-width: 680px) {
+    .banner{
+     display: flex;
+     flex-direction: column;
+
+    }
+    /* Start players cart styles--------------  */
+.players-card{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 16px;
+    margin: 100px 180px 50px 180px;
+}
+  /* --- extra section-1 ----- */
+  .teams{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:15px ;
+    justify-content: center;
+}
+/*-----Extra Section --2 -------*/
+.match{
+    display: flex;
+    flex-direction: column;
+   width: 80%;
+   margin: 10px 50px;
+   text-align: center;
+}
+.match h3, p{
+    padding: 5px 0px;
+}
+
+}
+
+
+/*-------------- End -------------------- */
+
+
+
