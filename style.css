@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Nunito Sans','Poppins', sans-serif;     
+    font-family: 'Poppins', sans-serif;     
     background-color: #fff;
 } 
 /* ------------------Header styles------------------------ */
@@ -190,7 +190,7 @@ opacity: 0.6;
 -----------@media Query--------------
 ------------------------------------ */
 /* -------for mobile------ */
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 688px) {
     .banner{
      display: flex;
      flex-direction: column;
